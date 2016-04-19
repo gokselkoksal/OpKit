@@ -3,7 +3,7 @@
 //  Koin
 //
 //  Created by Göksel Köksal on 14/04/16.
-//  Copyright © 2016 Mangu. All rights reserved.
+//  Copyright © 2016 GK. All rights reserved.
 //
 
 import Foundation

@@ -3,7 +3,7 @@
 //  Pods
 //
 //  Created by Göksel Köksal on 18/04/16.
-//
+//  Copyright © 2016 GK. All rights reserved.
 //
 
 import Foundation
