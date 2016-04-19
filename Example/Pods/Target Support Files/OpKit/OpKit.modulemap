@@ -1,0 +1,6 @@
+framework module OpKit {
+  umbrella header "OpKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

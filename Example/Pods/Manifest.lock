@@ -1,0 +1,14 @@
+PODS:
+  - OpKit (0.1.0)
+
+DEPENDENCIES:
+  - OpKit (from `../`)
+
+EXTERNAL SOURCES:
+  OpKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  OpKit: 12189aa42f405c7a46bb0329e749db6572decaab
+
+COCOAPODS: 0.39.0
