@@ -11,6 +11,11 @@
 		2D0A7D7BB4F33B4028952BAF09AE34B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		39D5EE81D0FD6EBBB87DEA1283FFB7F8 /* OpKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 307E59721A2AD75555C7C64BF50E7C46 /* OpKit.bundle */; };
 		3A9FEE0106063A040459F48F9DA0F240 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		625248021CC6B75100D67635 /* BlockOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625247FD1CC6B75100D67635 /* BlockOp.swift */; };
+		625248031CC6B75100D67635 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625247FE1CC6B75100D67635 /* Definitions.swift */; };
+		625248041CC6B75100D67635 /* GroupOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625247FF1CC6B75100D67635 /* GroupOp.swift */; };
+		625248051CC6B75100D67635 /* Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625248001CC6B75100D67635 /* Op.swift */; };
+		625248061CC6B75100D67635 /* OpQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625248011CC6B75100D67635 /* OpQueue.swift */; };
 		9439D371BEDAE3BCF3718EFA76C83D9E /* OpKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 039ED24EE6C2480A1ED0180FC977C199 /* OpKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B75425E3D871F24BFBCC55C9971E6F57 /* OpKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD542214DAB9E932B82E833B3BF914C3 /* OpKit-dummy.m */; };
 		BB5EC962051962290F9F109395F8B172 /* Pods-OpKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F94394C84B68A065A78526EF33ECF4 /* Pods-OpKit_Tests-dummy.m */; };
@@ -59,6 +64,11 @@
 		57FA39584297495E4A82FEF39DF2A080 /* Pods-OpKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		5B53AE39932890D2451199278F9C1A35 /* Pods-OpKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpKit_Example-resources.sh"; sourceTree = "<group>"; };
 		5BA35A17D8B562FFD4DEA19240431941 /* Pods-OpKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpKit_Tests.modulemap"; sourceTree = "<group>"; };
+		625247FD1CC6B75100D67635 /* BlockOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockOp.swift; sourceTree = "<group>"; };
+		625247FE1CC6B75100D67635 /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		625247FF1CC6B75100D67635 /* GroupOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupOp.swift; sourceTree = "<group>"; };
+		625248001CC6B75100D67635 /* Op.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Op.swift; sourceTree = "<group>"; };
+		625248011CC6B75100D67635 /* OpQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpQueue.swift; sourceTree = "<group>"; };
 		6AAB816D2A5DBB03D9FC80F89008D692 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716567A388B1A688D4D8C5CD32C42B34 /* OpKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OpKit.modulemap; sourceTree = "<group>"; };
 		82315056CB713DB541BB697CAA97C0F4 /* Pods-OpKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +126,11 @@
 		029F2B32A7F5B85D0698AF81D84C6737 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				625247FE1CC6B75100D67635 /* Definitions.swift */,
+				625248001CC6B75100D67635 /* Op.swift */,
+				625247FD1CC6B75100D67635 /* BlockOp.swift */,
+				625247FF1CC6B75100D67635 /* GroupOp.swift */,
+				625248011CC6B75100D67635 /* OpQueue.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -351,7 +366,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -412,6 +427,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625248061CC6B75100D67635 /* OpQueue.swift in Sources */,
+				625248041CC6B75100D67635 /* GroupOp.swift in Sources */,
+				625248021CC6B75100D67635 /* BlockOp.swift in Sources */,
+				625248031CC6B75100D67635 /* Definitions.swift in Sources */,
+				625248051CC6B75100D67635 /* Op.swift in Sources */,
 				B75425E3D871F24BFBCC55C9971E6F57 /* OpKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03D75D426B89C57C4EB0101D1E20E30E /* OpKit.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -656,6 +677,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03D75D426B89C57C4EB0101D1E20E30E /* OpKit.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
