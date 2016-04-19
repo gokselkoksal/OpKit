@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OpKit_Example', :exclusive => true do
+  pod 'OpKit', :path => '../'
+end
+
+target 'OpKit_Tests', :exclusive => true do
+  pod 'OpKit', :path => '../'
+
+  
+end
